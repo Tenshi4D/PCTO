@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n1 = 666;
+    int n1 = 2;
     int n2 = 4;
 
     printf("n1 + n2: %d\n", (n1 + n2));
