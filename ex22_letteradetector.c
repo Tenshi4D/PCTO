@@ -11,11 +11,11 @@ void letteradetector()
             )
             
         {
-            printf("E' una vocale\n");
+            printf("È una vocale\n");
         }
         else
         {
-            printf("E' una consonante\n");
+            printf("È una consonante\n");
         }
     }   
 

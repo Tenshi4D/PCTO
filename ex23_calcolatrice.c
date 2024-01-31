@@ -1,24 +1,36 @@
 #include <stdio.h>
 
-void stampaAddizione(n1, n2)
+void operazione()
 {
-    printf("%d", (n1 + n2));
+    float n1, n2;
+    char a;
+
+    printf("Inserisci 2 variabili\n");
+    scanf("%f %f", &n1,&n2);
+    printf("Che operazione vuoi fare? Scegli tra (+) (-) (*) (/)\n");
+    scanf(" %c", &a);
+    
+    if(a == '+')
+    {
+        printf("Il risultato è %f\n", n1 + n2);
+    }
+    if(a == '-')
+    {
+        printf("Il risultato è %f\n", n1 - n2);
+    }
+    if(a == '*')
+    {
+        printf("Il risultato è %f\n", n1 * n2);
+    }
+    if(a == '/')
+    {
+        printf("Il risultato è %f\n", n1/n2);
+    }
 }
 
 int main()
 {
+    operazione();
     
-    int operazione;
-    float n1, n2;
-    printf("Inserisci due numeri\n");
-    scanf("%f %f", &n1,&n2);
-    printf("Quale operazione vuoi fare tra addizione (1), sottrazione (2), moltiplicazione (3) o divisione (4)?\n");
-    scanf("%d", &operazione);
-    if(operazione == 1)
-    {
-        stampaAddizione();
-    }
-
     return 0;
-
 }
